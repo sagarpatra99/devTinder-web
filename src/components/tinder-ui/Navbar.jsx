@@ -3,9 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/assets/logo.png";
-import profile from "../../../public/assets/profileImg.png";
+import Login from "@/components/ui/Login";
 
 export default function Navbar() {
+
   return (
     <div className="bg-gray-800 text-white py-4 px-6 flex items-center justify-between">
       <Link href={"/"}>
@@ -15,7 +16,7 @@ export default function Navbar() {
         </div>
       </Link>
       <div>
-        <Image src={profile} width={70} alt="Picture of the author" />
+        <Login />
       </div>
     </div>
   );
