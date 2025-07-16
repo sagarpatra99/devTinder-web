@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Preahvihear } from 'next/font/google';
+import Navbar from "@/components/tinder-ui/Navbar";
 
 const preahvihear = Preahvihear({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={preahvihear.className}
       >
+        <Navbar />
         {children}
       </body>
     </html>

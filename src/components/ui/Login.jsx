@@ -42,7 +42,7 @@ export default function Login() {
     <>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
       <button
-        className="btn"
+        className="btn rounded-full"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
         {signup ? "Sign Up" : "Login"}
@@ -96,7 +96,7 @@ export default function Login() {
             </button>
           </p>
           <button
-            className="bg-blue-600 text-white w-full py-1 rounded mt-4"
+            className="bg-blue-600 text-white w-full py-1 rounded mt-4 cursor-pointer hover:shadow-2xl hover:bg-blue-700 duration-300 transition-all"
             onClick={handleLogin}
           >
             {signup ? "Sign Up" : "Login"}

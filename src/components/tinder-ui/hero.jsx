@@ -1,11 +1,14 @@
-// import Image from "next/image";
-// import wallpaper from "../../../public/assets/wallpaper.jpg";
-
 export default function Hero() {
   return (
-    <div className="">
-      {/* <Image src={wallpaper} height="100vh" width={100} alt="wallpaper" /> */}
-      djbkvdfkjvbf
+    <div
+      className="bg-fixed bg-center bg-cover min-h-screen flex items-center justify-center"
+      style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1618171889969-0feeb769fe78?auto=format&fit=crop&w=1470&q=80')"
+      }}
+    >
+      <div className="">
+        <h1 className="text-white text-7xl font-bold text-center">Welcome to DevTinder</h1>
+      </div>
     </div>
   );
 }
