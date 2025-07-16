@@ -30,7 +30,7 @@ export default function Login() {
       );
 
       console.log("Login Success:", res.data);
-      alert(res.data); // Show success message
+      alert("Login Successfully"); // Show success message
       router.push("/"); // Redirect to homepage
     } catch (err) {
       console.error("Login Error:", err);
